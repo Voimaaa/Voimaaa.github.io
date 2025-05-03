@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/dbc8c21e67.js" crossorigin="anonymous"></script>
+    <title>Shamal-Coaching - Psychologische Beratung</title>
+</head>
+
+<style>
+  .stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+  }
+</style>
+
+<body class="scroll-smooth bg-center sm:bg-center">    
+    <!-- NAVIGATION-BAR -->
+    <nav class="h-[70px] relative w-full px-6 md:px-16 lg:px-24 xl:px-32 flex items-center justify-between z-20 bg-white text-gray-700 shadow-[0px_4px_25px_0px_#0000000D] transition-all">
+        
+        <a href="#">
+            <h1 class="text-emerald-600 font-bold text-2xl font-serif">SHAMAL GHADERI</h1>
+        </a>
+    
+        <ul class="md:flex hidden items-center gap-10">
+            <li><a class="text-emerald-500" href="#home">Home</a></li>
+            <li><a class="hover:text-gray-500/80 transition" href="pages/motivation.html">Motivation</a></li>
+            <li><a class="hover:text-gray-500/80 transition" href="pages/company.html">Shamal Ghaderi</a></li>
+            <li><a class="hover:text-gray-500/80 transition" href="#newsletter">Newsletter</a></li>
+            <!-- ARROW UP --- <i class="fa-solid fa-angle-up"></i> -->
+        </ul>
+    
+        <a href="pages/contact.html">
+        <button type="button" class="bg-white text-gray-600 border border-gray-300 md:inline hidden text-sm hover:bg-gray-50 active:scale-95 transition-all w-40 h-11 rounded-full">
+            Kontakt <i class="fa-regular fa-paper-plane"></i>
+        </button>
+        </a>
+        <button aria-label="menu-btn" type="button" class="menu-btn inline-block md:hidden active:scale-90 transition" onclick="toggleNavigationbar()">
+            <i class="fa-solid fa-bars text-xl" id="bar-icon"></i>
+        </button>
+    
+        <!-- X ICON --- <i class="fa-solid fa-xmark"></i> -->
+        <div class="mobile-menu absolute top-[70px] left-0 w-full bg-white p-6  shadow-[0px_5px_5px_0px_#0000000D]" id="phone-navigation">
+            <hr class="text-gray-200 mb-6">
+            <ul class="flex flex-col space-y-4 text-lg">
+                <li><a href="#home" onclick="closeNavBar();" class="text-sm text-emerald-500">Home</a></li>
+                <li><a href="pages/motivation.html" onclick="closeNavBar();" class="text-sm">Motivation</a></li>
+                <li><a href="pages/company.html" onclick="closeNavBar();" class="text-sm">Shamal Ghaderi</a></li>
+                <li><a href="#newsletter" onclick="closeNavBar();" class="text-sm">Newsletter</a></li>
+                <li><a href="pages/contact.html" onclick="closeNavBar();" class="text-sm">Kontakt <i class="fa-regular fa-paper-plane"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- ENDE NAVIGATION-BAR -->
+
+
+    <!-- HOME -->
+    <div id="home" class="h-150 bg-cover bg-center bg-no-repeat bg-size-[auto_600px] text-center pt-7 md:bg-position-[left_top_-2rem] md:bg-size-[auto_1160px] 2xl:bg-cover" style="background-image: url('images/shamal_picture2.jpg');">
+        <div class="mt-80 md:mt-0">
+            <h1 id="fullname" class="text-5xl font-bold text-emerald-500 mt-1
+            md:absolute md:ml-44 md:mt-28 md:text-6xl 
+            xl:absolute xl:ml-44 xl:mt-28 xl:text-6xl">Shamal Ghaderi</h1>
+            
+            <h3 id="slogan" class="text-gray-300 
+            md:absolute md:ml-44 md:mt-44 md:text-xl 
+            xl:absolute xl:ml-44 xl:mt-44 xl:text-xl">Ich begleite dich - wenn du bereit bist!</h3>
+            <a href="pages/contact.html">
+            <button id="getAMeeting" class="
+            md:mt-55 md:w-65 md:relative z-100
+            xl:mr-165 xl:w-65 xl:relative
+            2xl:mr-335
+            bg-emerald-500 text-white mt-6 outline-slate-200 rounded-md border-slate-300 py-2 px-4 text-xl transition-all shadow-sm hover:shadow-lg text-center text-slate-600 hover:text-white hover:bg-emerald-600 hover:border-emerald-600 focus:text-white focus:bg-emerald-800 focus:border-emerald-400 active:border-slate-800 active:text-white active:bg-slate-800 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
+                Termin vereinbaren&nbsp; <i class="fa-regular fa-calendar"></i>
+              </button></a>
+        </div>
+     </div>
+     <!-- ENDE HOME-->
+
+
+     <!-- ÜBER MICH -->
+    <div style="" id="about-me" class="
+    bg-zinc-100 w-full h-full
+     md:relative md:h-100 md:pb-125
+    ">
+        <div id="about-me-text" class="pt-12 pb-16">
+            <center>
+                <img class="rounded-full
+                md:ml-120 md:relative md:top-9 md:w-82 w-76"
+                 src="images/shamal_picture4_resized.jpg" alt="Shamal Ghaderi Portrai">
+                <div class="
+                md:ml-65 md:relative md:bottom-76 md:text-left">
+                    <h1 class="text-gray-400 text-xl pt-4">Motivation</h1>
+                    <h1 class="text-emerald-600 text-3xl font-bold">Shamal Ghaderi</h1>
+                    <p class="w-92 pt-5 text-xl">Ich wuchs in einfachen Verhältnissen auf, in einem Haus aus Lehm, ohne Strom und fließendes Wasser. Es war ein Leben, das mich früh lehrte, was es bedeutet, Verantwortung zu tragen und für das zu kämpfen, was man liebt. Jeden Tag arbeitete ich, half, trug meine Last...</p>
+                    <a href="pages/motivation.html"><button class="bg-emerald-500 p-2 w-48 rounded-md text-white mt-7 hover:bg-emerald-600 transition duration-200">Mehr Lesen <i class="fa-solid fa-arrow-right"></i></button></a>    
+                </div>    
+            </center>
+        </div>
+    </div>
+    
+    <!-- ENDE  ÜBER MICH-->
+
+
+    <section class="bg-white dark:bg-gray-900" id="newsletter">
+      <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+        <div class="mx-auto max-w-screen-md sm:text-center">
+          <h2 class="mb-4 text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl dark:text-white pt-5">Newsletter</h2>
+          <p class="mx-auto mb-8 max-w-2xl font-light text-gray-500 md:mb-12 sm:text-xl dark:text-gray-400">Bleibe Up-to-Date mit dem Newsletter und erhalte immer die neusten Informationen.</p>
+          
+          <!-- FORMULAR -->
+          <form id="newsletter-form">
+            <div class="items-center mx-auto mb-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0">
+              <div class="relative w-full">
+                <label for="newsletter-email" class="hidden mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">E-Mail Adresse</label>
+                <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+                  <svg class="w-5 h-5 text-gray-500 dark:text-gray-400 pointer-events-none" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                  </svg>                  
+                </div>
+                <input class="block p-3 pl-10 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:rounded-none sm:rounded-l-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" placeholder="Gebe deine E-Mail ein" type="email" name="newsletter_email" id="newsletter-email" required>
+              </div>
+              <div>
+                <button style="z-index: 999; position: relative;"  type="submit" class="py-3 px-5 w-full text-sm font-medium text-center text-white rounded-lg border cursor-pointer bg-primary-700 border-primary-600 sm:rounded-none sm:rounded-r-lg hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Abonnieren</button>
+              </div>
+            </div>
+            <div class="mx-auto max-w-screen-sm text-sm text-left text-gray-500 newsletter-form-footer dark:text-gray-300 pb-5 md:pb-0">Deine Daten werden sicher aufbewahrt! Lese unsere <a href="pages/datenschutz.html" class="font-medium text-primary-600 dark:text-primary-500 hover:underline">Datenschutz-Regelung</a>.</div>
+            <div class="flex md:relative md:right-6">
+              <center>
+            <input type="checkbox" name="einverstanden" id="einverstanden">
+            <label for="einverstanden" class="text-zinc-400 text-left md:inline-block md:w-3/4 md:relative md:top-6 pb-10"> Hiermit bestätige ich, dass ich in den E-Mail Newsletter aufgenommen werden möchte und erlaube die Auftragsbezogene Datenverarbeitung.</label>
+          </center></div>
+          </form>
+        </div>
+      </div>
+    </section>
+    
+    <script>
+      document.getElementById('newsletter-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        emailjs.sendForm('service_soyq2sg', 'template_8y3uy84', this)
+          .then(function() {
+            showPopupNewsletter()
+            document.getElementById('newsletter-form').reset();
+          }, function(error) {
+            console.error('Fehler beim Senden:', error);
+            alert('Fehler bei der Anmeldung. Bitte versuche es erneut.');
+          });
+      });
+    </script>
+    
+
+    <div style="" id="unternehmen" class="
+     bg-white w-full h-full pb-28 shadow-lg pt-6
+     md:relative md:h-100 mt-5
+    ">
+        <div id="about-me-text" class="pt-6">
+            <center>
+                <div class="
+                md:bottom-76">
+                    <h1 class="text-gray-400 text-xl pt-4"><i class="fa-regular fa-building"></i> Über's Unternehmen</h1>
+                    <p class="w-3/4 md:w-3/4 xl:w-3/6 2xl-w-2/6 pt-3 text-xl">Es beginnt mit einem leisen Ruf.
+                      Vielleicht fragst du dich, warum etwas nicht mehr passt.
+                      Vielleicht fühlst du eine Müdigkeit, die tiefer geht.
+                      Oder es ist einfach das Gefühl, dass etwas fehlt,
+                      ohne genau zu wissen, was es ist. Manchmal spricht das Leben nicht laut.
+                      Es flüstert in den stillen Momenten,
+                      in denen du innehalten kannst.
+                      Es ruft, während du dich fragst,
+                      ob du noch auf dem richtigen Weg bist...</p>
+                    <a href="pages/company.html"><button class="bg-emerald-500 p-2 w-65 rounded-md text-white mt-7 hover:bg-emerald-600 transition duration-200">Mehr über's Unternehmen <i class="fa-solid fa-arrow-right"></i></button></a>    
+                </div>    
+            </center>
+        </div>
+    </div>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d169883.65904815987!2d14.032121064948868!3d48.29453904993289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47739595fa99854d%3A0x7c53292c577975c4!2sLinz!5e0!3m2!1sde!2sat!4v1745956445255!5m2!1sde!2sat" class="w-full" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+<footer class="bg-white w-full shadow-sm dark:bg-gray-900">
+    <div class="w-full max-w-screen-xl mx-auto p-10 md:py-8">
+        <div class="sm:flex sm:items-center sm:justify-between">
+            <a href="#" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+              <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">SHAMAL GHADERI</span>
+            </a>
+            <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+                <li>
+                    <a href="pages/motivation.html" class="hover:underline me-4 md:me-6">Motivation</a>
+                </li>
+                <li>
+                  <a href="pages/company.html" class="hover:underline me-4 md:me-6">Shamal Ghaderi</a>
+              </li>
+                <li>
+                    <a href="pages/impressum.html" class="hover:underline me-4 md:me-6">Impressum</a>
+                </li>
+                <li>
+                    <a href="pages/datenschutz.html" class="hover:underline me-4 md:me-6">Datenschutz</a>
+                </li>
+                <li>
+                    <a href="pages/contact.html" class="hover:underline">Kontakt</a>
+                </li>
+                <br>
+                &nbsp; &nbsp; <a href="https://www.youtube.com/@shamalghaderi-coaching"><i class="fa-brands fa-youtube"></i></a>
+            </ul>
+        </div>
+        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 <a href="#" class="hover:underline">Shamal Ghaderi</a>. All Rights Reserved.</span>
+    </div>
+</footer>
+
+<center>
+  <div class="bg-zinc-200 w-4/4 mt-10 h-full p-10 rounded-lg shadow-md absolute bottom-0 pt-30 z-100 hidden" id="success-message-newsletter">
+    <i class="fa-solid fa-newspaper  text-emerald-500 text-8xl"></i>
+      <br><br><br>
+      <h1 class="text-zinc-900 text-2xl">Erfolgreich Eingetragen</h1>
+      <h1 class="text-zinc-400 text-md">Du wurdest erfolgreich bei dem Newsletter eingetragen. Ab jetzt erhältst du regelmäßig Updates!</h1>
+      <br><br><br>
+      <button onclick="closePopupNewsletter();" class="bg-emerald-500 p-3 text-white w-2/4 rounded-md hover:bg-emerald-600 transition">Schließen <i class="fa-solid fa-xmark"></i></button>
+
+  </div>
+</center>
+
+
+<!-- EmailJS Script -->
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    emailjs.init("f0nUvyb7Jv3BpEuFo"); // ← Dein Public Key
+
+    const contactForm = document.getElementById("contact-form");
+
+    if (contactForm) {
+      contactForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        emailjs.sendForm("service_soyq2sg", "template_wg3gpla", this)
+          .then(function (response) {
+            showPopup();
+            contactForm.reset();
+          }, function (error) {
+            alert("Es ist ein Fehler aufgetreten. Bitte versuche es erneut.");
+            console.error("EmailJS Fehler:", error);
+          });
+      });
+    } else {
+      console.warn("Kontaktformular nicht gefunden.");
+    }
+  });
+</script>
+
+<script src="scripts/popup.js"></script>
+<script src="scripts/navigation-bar.js"></script>
+</body>
+</html>
